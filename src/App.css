@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-family: 'Roboto';
+  font-size: 16px;
 }
-
-.App-header {
-  background-color: #282c34;
+.video-player-container {
   min-height: 100vh;
+  width: 100%;
+}
+.responsive-container {
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.videos-display {
+  background-color: #cad2de;
+  height: 100%;
+  width: 25%;
+  padding-left: 20px;
+  padding-right: 16px;
+}
+.label-element {
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.input-element {
+  outline: none;
+  background: #ffffff;
+  height: 30px;
+  width: 80%;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 24px;
+}
+.videos-list-container {
+  width: 100%;
+  list-style-type: none;
+}
+.main-video-container {
+  width: 75%;
+  background-color: #c2d4f2;
+  padding: 16px;
+}
+.video-title {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #3b475c;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
